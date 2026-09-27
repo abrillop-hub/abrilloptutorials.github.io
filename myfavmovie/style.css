@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+    font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: bolder;
+  font-size: 20px;
+}
+
+#logo {
+    width: 10%;
+    height: 15%;
+    margin: 10px;
+}
+
+header {
+    background-color:darkred;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#title {
+    display: inline;
+    font-size: 50px;
+}
+
+nav {
+    background-color:beige;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#links li {
+    display: inline;
+    padding: 15px;
+    border-right: 2px solid white;
+}
+
+#links li:hover {
+    background-color: white;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+}
+
+table, th, td, caption {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+th{
+    background-color:blanchedalmond;
+}
+
+caption {
+    font-size: 30px;
+    background-color:burlywood;
+    color: white;
+}
+
+.actorsImg {
+    width: 95px;
+    height: 110px;
+    border: 2px solid white;
+}
+
+dd {
+    padding-bottom: 26px;
+}
+
+dt {
+    font-weight: bold;
+}
