@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Animal Quiz</title>
+        <script src="code.js"></script>
     </head>
     <body>
     <header>
@@ -12,70 +13,78 @@
 
     <section>
         <form>
-            <!---Radio Buttons--->
+            <!---Question 1: Radio Buttons--->
             <fieldset>
                 <legend>Which animal is known as the king of the jungle?</legend>
-                <input type="radio" id="option1" name="animal">
-                <label for="option1">Lion</label>
+                <input type="radio" id="king1" name="question1">
+                <label for="king1">Lion</label>
 
-            <input type="radio" id="option2" name="animal">
-            <label for="option2">Elephant</label>
+            <input type="radio" id="king2" name="question1">
+            <label for="king2">Elephant</label>
 
-            <input type="radio" id="option3" name="animal">
-            <label for="option3">Bear</label>
+            <input type="radio" id="king3" name="question1">
+            <label for="king3">Bear</label>
 
-            <input type="radio" id="option4" name="animal">
-            <label for="option4">Tiger</label>
+            <input type="radio" id="king4" name="question1">
+            <label for="king4">Tiger</label>
+            <p id="question1-feedback"></p>
             </fieldset>
             
-                <!---Check boxes--->
+                <!---Question 2: Check boxes--->
              <fieldset>
-                    <legend>Select the animals that can fly:</legend>
-                    <input type="checkbox" id="fly1" name="flying_animals" value="Bird">
+                    <legend>Check 3 answers. Select the animals that can fly:</legend>
+                    <input type="checkbox" id="fly1" name="question2" value="Bird">
                     <label for="fly1">Bird</label>
 
-            <input type="checkbox" id="fly2" name="flying_animals" value="Bat">
+            <input type="checkbox" id="fly2" name="question2" value="Bat">
             <label for="fly2">Bat</label>
 
-            <input type="checkbox" id="fly3" name="flying_animals" value="Butterfly">
+            <input type="checkbox" id="fly3" name="question2" value="Butterfly">
             <label for="fly3">Butterfly</label>
 
-            <input type="checkbox" id="fly4" name="flying_animals" value="Ostrich">
+            <input type="checkbox" id="fly4" name="question2" value="Ostrich">
             <label for="fly4">Ostrich</label>
+            <p id="question2-feedback"></p>
             </fieldset>
 
-            <!---Radio Buttons--->
+            <!---Question 3: Radio Buttons--->
             <fieldset>
                 <legend>Which animal is famous for its slow movement?</legend>
-                <input type="radio" id="option1" name="slow_animal">
-                <label for="option1">Rabbit</label>
+                <input type="radio" id="slow1" name="question3">
+                <label for="slow1">Rabbit</label>
 
-            <input type="radio" id="option2" name="slow_animal">
-            <label for="option2">Cheetah</label>
+            <input type="radio" id="slow2" name="question3">
+            <label for="slow2">Cheetah</label>
 
-            <input type="radio" id="option3" name="slow_animal">
-            <label for="option3">Sloth</label>
+            <input type="radio" id="slow3" name="question3">
+            <label for="slow3">Sloth</label>
 
-            <input type="radio" id="option4" name="slow_animal">
-            <label for="option4">Shark</label>
+            <input type="radio" id="slow4" name="question3">
+            <label for="slow4">Shark</label>
+            <p id="question3-feedback"></p>
             </fieldset>
-            <!---Check boxes--->
+            <!---Question 4: Check boxes--->
             <fieldset>
-                <legend>Select the animals that live in the ocean:</legend>
-                <input type="checkbox" id="ocean1" name="ocean_animals" value="Dolphin">
+                <legend>Check 3 answers. Select the animals that live in the ocean:</legend>
+                <input type="checkbox" id="ocean1" name="question4" value="Dolphin">
                 <label for="ocean1">Dolphin</label>
 
-            <input type="checkbox" id="ocean2" name="ocean_animals" value="Whale">
+            <input type="checkbox" id="ocean2" name="question4" value="Whale">
             <label for="ocean2">Whale</label>
 
-            <input type="checkbox" id="ocean3" name="ocean_animals" value="Shark">
+            <input type="checkbox" id="ocean3" name="question4" value="Shark">
             <label for="ocean3">Shark</label>
 
-            <input type="checkbox" id="ocean4" name="ocean_animals" value="Kangaroo">
+            <input type="checkbox" id="ocean4" name="question4" value="Kangaroo">
             <label for="ocean4">Kangaroo</label>
+            <p id="question4-feedback"></p>
             </fieldset>
+
+            
+                <input type="button" value="Submit Quiz" onclick="gradeQuiz()">
+             <div id="score"></div>
         </form>
     </section>
     </body>
 
-</html>
+</html> 

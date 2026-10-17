@@ -13,3 +13,8 @@ body {
     background-color:azure;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#question1-feedback, #question2-feedback, #question3-feedback, #question4-feedback {
+    color:blue;
+    font-weight:bold;
+}
