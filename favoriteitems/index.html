@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+    </head>
+
+    <body>
+        <h1>Favorite Items</h1>
+        <div id="items"></div><br>
+
+        <script>
+            var items = ["perfume", "mugs", "purses", "makeup", "boots", "dresses", "heels", "pens", "hairclips", "glitter"]; //array length = 10
+
+            var listHTML = "<ul>";
+
+            //loop through all the items in the array
+            for (var counter = 0; counter < items.length; counter++) {
+                listHTML += "<li>" + items[counter] + "</li>";
+            }
+            listHTML += "</ul>";
+
+            document.getElementById("items").innerHTML = listHTML;
+        </script>
+
+    </body>
+</html>
